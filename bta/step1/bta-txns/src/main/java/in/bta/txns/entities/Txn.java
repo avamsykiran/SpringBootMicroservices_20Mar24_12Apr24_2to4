@@ -29,13 +29,16 @@ public class Txn implements Comparable<Txn> {
 	private Long txnId;
 	@NotBlank(message = "header is a mandate field")
 	private String header;
+	
 	@NotNull(message = "txnDate is a mandate field")
 	@PastOrPresent(message = "txnDate can not be of future")
 	@DateTimeFormat(iso=ISO.DATE)
 	private LocalDate txnDate;
+	
 	@Enumerated
 	@NotNull(message = "type is a mandate field")
 	private TxnType type;
+	
 	@NotNull(message = "amount is a mandate field")
 	@Min(value = 0,message = "amount can not be negative")
 	private Double amount;

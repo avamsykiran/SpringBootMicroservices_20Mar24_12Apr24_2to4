@@ -23,7 +23,7 @@ public class StatementServiceImpl implements StatementService {
 	private TxnsClient txnsClient;
 
 	private double computeTotal(List<Txn> txns,TxnType type) {
-		return txns.stream().filter(t->t.getType()==type).map(Txn::getAmount).reduce((s1,s2)->s1+s2).orElse(0.0);
+		return txns.stream().filter(t->t.getType()==type).mapToDouble(Txn::getAmount).sum();
 	}
 	
 	@Override

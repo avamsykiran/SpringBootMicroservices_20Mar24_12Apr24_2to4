@@ -1,0 +1,12 @@
+
+ChildVaccinationTracker
+-----------------------------------------------
+
+    1. Each parnet must register with (fatherName,motherNane,mobile,mailId)
+    2. A parent may have multiple children.
+    3. Each child must be registered with (childName,gender,dateOfBirth)
+    4. Each time a child is given a vaccine, we need to record that info as
+        (vaccineName,dateOfAdministration,dosage)
+    5. A child can be administrated with multiple vaccines or multiple times.
+    6. Generate a report of vaccine given to a child given child Id.
+    7. Generate a report listing all the children who are adminisered a specific vaccine.

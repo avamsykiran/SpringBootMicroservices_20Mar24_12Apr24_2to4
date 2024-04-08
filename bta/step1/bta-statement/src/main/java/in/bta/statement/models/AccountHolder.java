@@ -6,7 +6,7 @@ public class AccountHolder {
 	private String fullName;
 	private String mobile;
 	private String mailId;
-	private double currentBalacne;
+	private double currentBalance;
 	
 	public AccountHolder() {
 		// TODO Auto-generated constructor stub
@@ -18,7 +18,7 @@ public class AccountHolder {
 		this.fullName = fullName;
 		this.mobile = mobile;
 		this.mailId = mailId;
-		this.currentBalacne = currentBalacne;
+		this.currentBalance = currentBalacne;
 	}
 
 	public long getAhId() {
@@ -54,11 +54,11 @@ public class AccountHolder {
 	}
 
 	public double getCurrentBalacne() {
-		return currentBalacne;
+		return currentBalance;
 	}
 
 	public void setCurrentBalance(double currentBalacne) {
-		this.currentBalacne = currentBalacne;
+		this.currentBalance = currentBalacne;
 	}
 
 		

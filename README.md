@@ -351,7 +351,7 @@ Microservices
                     in.bta:bta-gateway
                         dependencies
                             org.springframework.boot:spring-boot-devtools
-                            org.springframework.cloud:spring-cloud-starter-api-gateway
+                            org.springframework.cloud:spring-cloud-starter-gateway
                             org.springframework.cloud:spring-cloud-starter-netflix-eureka-client
                             org.springframework.cloud:spring-cloud-starter-loadbalancer
                         configuaration
@@ -537,6 +537,15 @@ Microservices
                             
                             eureka.client.serviceUrl.defaultZone=http://localhost:9000/eureka/   
 
+
+    S.O.L.I.D
+    ---------------------------------------------------------------------------------------------
+
+        Single Responsibility Principle
+        Open-Closed Principle
+        Liskov Substitution Principle
+        Interface Segregation Principle
+        Dependency Inversion Principle (IoC)
 
     Assigment-CaseStudy - ERP System
     -------------------------------------------------------------------

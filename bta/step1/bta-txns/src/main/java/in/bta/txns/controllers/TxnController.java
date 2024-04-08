@@ -64,8 +64,8 @@ public class TxnController {
 			re = new ResponseEntity<Txn>(txnService.add(txn),HttpStatus.CREATED);
 		else
 			re = new ResponseEntity<Txn>(txnService.update(txn),HttpStatus.ACCEPTED);
+		
 		return re;
 	}
-	
 	
 }
